@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="border-right text-white bg-warning" id="sidebar-wrapper">
+            <div class="sidebar-heading">
+                <div class="container">
+                    <img src="images/logo.png" class="ml-3" width="100">
+                </div>
+                <p class="text-center text-dark"><span class="text-danger">R</span>esturant and <span class="text-danger">C</span>afe <span class="text-danger">S</span>ervice</p>
+            </div>
+
+            <div class="list-group list-group-flush">
+                <a href="allclients.html" class="list-group-item list-group-item-action">All Clients</a>
+                <a href="request.html" class="list-group-item list-group-item-action">Requests</a>
+            </div>
+            <div class="btn-group col-md-4" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="index.html"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+                </div>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-light bg-light border-bottom">
+                <button class="btn btn-outline-warning" id="menu-toggle"><i class="fas fa-bars"></i></button>
+            </nav>
+
+            <div id="allClients" class="container mt-5">
+                <h2 class="container" style="color:#4a3f35">All Clients</h2>
+                <hr>
+                <table class=" table table-hover table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Products</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td>03/03/2020 11:12:00 PM</td>
+                            <td><button class="showItems btn btn-outline-warning btn-sm text-white">Show(<span class="num">3</span>)</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@fat</td>
+                            <td>03/03/2020 11:12:00 PM</td>
+                            <td><button class="showItems btn btn-outline-warning btn-sm text-white">Show(<span class="num">5</span>)</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>03/03/2020 11:12:00 PM</td>
+                            <td><button class="showItems btn btn-outline-warning btn-sm text-white">Show(<span class="num">2</span>)</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $('#sidebar-wrapper .list-group a:eq(0)').css('backgroundColor', '#ff4301')
+    </script>
+</body>
+
+</html>

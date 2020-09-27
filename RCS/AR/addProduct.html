@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تُعد مجموعة  RCS سوقاً عالمياً عبر الإنترنت نقدم فيه جميع الخدمات الخاصة بالكافيهات والمطاعم، يمكنك عرض المطعم او الكافيه للبيع فى حاله الرغبة فى ذلك . ايضاً من خلال المنصة ، يمكنك بيع وشراء جميع المستلزمات الخاصة بالكافيه او المطعم مثل الثلاجات والافران وماكينات الاسبريسو وغيرها ..
+    ">
+    <meta name="keywords" content="ارت براند , ارت ديزاين , ارت ميديا , ارت فرنشايز , ار سى اس , خدمات المطاعم و الكافيهات , معدات المطبخ و معدات الكافيهات و المطاعم , وظائف , شيفات , خدمات , اجهزه ,تصميم داخلى , تصميم خارجى">
+    <meta name="author" content="احمد صابر">
+    <meta name="copyright" content="جميع الحقوق محفوظه لدى ارت ميديا">
+    <title>انشاء اعلان </title>
+    <link rel="icon" href="../images/icon.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-warning navbar-light  wow fadeIn">
+        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto text-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../images/Arabic.png" width="30px" />AR
+                    </a>
+                    <div class="dropdown-menu p-0 bg-transparent" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../EN/addProduct.html"><img src="../images/English.png" width="30px" />EN</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">تسجيل الدخول</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="registration.html">انشاء حساب</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="products.html">المنتجات</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">الرئيسية</a>
+                </li>
+            </ul>
+        </div>
+        <a class="navbar-brand ml-4" href="index.html">
+            <img src="../images/logo.png" class="d-inline-block align-top float-left " alt="" loading="lazy">
+        </a>
+    </nav>
+
+    <div class="addproductPage wow fadeIn container p-4 border col-md-8" style="margin-top: 200px;">
+        <form class="p-4 text-right">
+            <p class="text-primary text-right">معلومات عن المنتج</p>
+            <hr>
+            <div class="form-group row">
+                <label for="ItemName" class="col-sm-2 col-form-label">اسم المنتج</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="ItemName" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Category" class="col-sm-2 col-form-label">القسم</label>
+                <div class="col-sm-10">
+                    <select class="form-control form-control-sm" required>
+                        <option>...</option>
+                        <option>بيع / شراء</option>
+                        <option>خدمات</option>
+                        <option>وظائف</option>
+                        <option>اخبار / احداث</option>
+                      </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Category" class="col-sm-2 col-form-label">الفئه</label>
+                <div class="col-sm-10">
+                    <select class="form-control form-control-sm" required>
+                        <option>...</option>
+                        <option> الفئه 1 </option>
+                        <option>الفئه 2</option>
+                        <option>الفئه 3</option>
+                        <option> الفئه 4 </option>
+                      </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Descripton" class="col-sm-2 col-form-label">الوصف</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="Descripton" required></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Images" class="col-sm-2 col-form-label ml-4">الصور</label>
+                <div id="InputImage" class="ml-5 mb-5">
+                    <div class="row">
+                        <input type="file" id="Images" required>
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <button id="addimage" class="btn btn-outline-primary float-left" onclick="Generate(event)" role="button"> اضافه صورة اخرى </button>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="addressProduct" class="col-sm-2 col-form-label">العنوان</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="addressProduct" required></textarea>
+                </div>
+            </div>
+            <p class="text-primary text-right">معلومات المالك</p>
+            <hr>
+            <div class="form-group row">
+                <label for="OwnerName" class="col-sm-2 col-form-label">الاسم</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="ItemName" value="Owner Name" disabled>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="OwnerPhone" class="col-sm-2 col-form-label">رقم الهاتف</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="OwnerPhone" value="Owner Phone Number" disabled>
+                </div>
+            </div>
+            <div class="form-group row mb-4">
+                <label for="OwnerEmail" class="col-sm-2 col-form-label">البريد الالكتروني</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="OwnerEmail" value="Owner Email" disabled>
+                </div>
+            </div>
+            <div class="form-group row ">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">انشاء طلب</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="chat container">
+        <button class="btn btn-primary btn-lg"><i class="fab fa-facebook-messenger"></i></button>
+    </div>
+    <div class="inbox p-5 bg-primary">
+        <div class="container">
+            <h4 class="text-center text-white mb-4"> ارسل لي <i class="fas fa-mail-bulk text-info"></i></h4>
+        </div>
+        <form>
+            <div class="form-group text-white">
+                <label for="exampleFormControlTextarea1" class=" text-white font-weight-bolder" style="margin: 5px 0px 0px 220px;">الرسائل :</label>
+                <div class="chatBox"></div>
+            </div>
+            <div class="form-group text-white">
+                <label for="message" class=" text-white" style="margin: 5px 0px 0px 220px;">ادخل الرساله :</label>
+                <div class="container">
+                    <div class="row">
+                        <input type="text" class="form-control col-md-8 ml-3 text-white" id="message" placeholder="ادخل رسالتك ....">
+                        <button class="btn btn-sm btn-outline-info"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer class="container-fluid bg-warning col-lg-12 col-md-12 col-sm-12 text-dark py-2">
+        <p class="text-center"> 2020 &copy; جميع الحقوق محفوظه لدي ارت ميديا </p>
+    </footer>
+
+
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
